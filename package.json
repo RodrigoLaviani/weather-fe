@@ -1,0 +1,45 @@
+{
+  "name": "weather-fe",
+  "version": "1.0.0",
+  "description": "Frontend where you can check the weather of your city.",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --config webpack.config.local.js",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoLaviani/weather-fe.git"
+  },
+  "keywords": [
+    "Wheather",
+    "React",
+    "Frontend"
+  ],
+  "author": "Rodrigo Laviani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RodrigoLaviani/weather-fe/issues"
+  },
+  "homepage": "https://github.com/RodrigoLaviani/weather-fe#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.5",
+    "mini-css-extract-plugin": "^2.4.5",
+    "terser-webpack-plugin": "^5.3.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
