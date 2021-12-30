@@ -9,3 +9,7 @@ Frontend where you can check the weather of your city.
 · First step: npm install
 
 · Second step: npm run start
+
+# verify lint code
+
+· Run in console: npm run lint
