@@ -36,32 +36,25 @@ module.exports = (argv) => (merge(common({ mode: 'development' }, argv), { modul
         ]
       },
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: argv.mode === 'development'
-            }
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
-      },
-      {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
           {
-            loader: 'sass-loader'
-          }
-        ]
+              loader: 'style-loader',
+          },
+          {
+              loader: 'css-loader',
+              options: {
+                  sourceMap: true,
+              },
+          },
+          {
+              loader: 'sass-loader',
+              options: {
+                  sourceMap: true,
+              },
+          },
+      ],
       }
     ]
   },
