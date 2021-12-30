@@ -1,6 +1,28 @@
+@import 'mediaquery.scss';
+
 .app-container {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include for-phone-only {
+        width: 100vw;
+    }
+    @include for-tablet-landscape-up-or-more {
+        width: 50vw;
+    }
+}
+
+.title {
+    display: flex;
+    position: relative;
+    margin-top: -15%;
+    justify-content: center;
+    @include for-phone-only {
+        font-size: 34px;
+    }
+    @include for-tablet-landscape-up-or-more {
+        font-size: 43px;
+    }
 }

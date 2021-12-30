@@ -12,18 +12,6 @@ module.exports = (argv) => (merge(common({ mode: 'development' }, argv), { modul
         }
       },
       {
-        test: /\.(woff(2)?|ttf|otf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/fonts/'
-            }
-          }
-        ]
-      },
-      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {

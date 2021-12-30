@@ -6,7 +6,7 @@ const App = () => {
 
     return (
         <div className='app-container'>
-            <h1>Weather Now</h1>
+            <h1 className='title'>Weather Now</h1>
             <Input></Input>
             <SelectorContainer></SelectorContainer>
             <WeatherContainer></WeatherContainer>
