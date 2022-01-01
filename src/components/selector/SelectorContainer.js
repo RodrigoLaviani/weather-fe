@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/stylesheets/selector/selector.scss';
 
 const SelectorContainer = () => {
 
@@ -7,7 +8,7 @@ const SelectorContainer = () => {
       };
 
     return (
-        <div style={style}>
+        <div className="selector-container" style={style}>
 
         </div>
     )

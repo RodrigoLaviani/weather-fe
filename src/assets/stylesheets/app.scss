@@ -1,8 +1,21 @@
 @import 'mediaquery.scss';
 
-.app-container {
-    display: grid;
+body {
+    margin: 0;
+}
+
+#app {
+    display: flex; 
     justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,9 +29,9 @@
 
 .title {
     display: flex;
-    position: relative;
-    margin-top: -15%;
     justify-content: center;
+    height: 6%;
+    width: 100%;
     @include for-phone-only {
         font-size: 34px;
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/stylesheets/weather/weather.scss';
 
 const WeatherContainer = () => {
 
@@ -7,7 +8,7 @@ const WeatherContainer = () => {
       };
 
     return (
-        <div style={style}>
+        <div className="weather-container" style={style}>
 
         </div>
     )
