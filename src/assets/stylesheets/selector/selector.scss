@@ -1,5 +1,40 @@
+@import '../constants.scss';
+
 .selector-container {
     height: 15%;
     width: 95%;
-    margin-top: 1%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-container {
+    height: 100%;
+    width: 19%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 77px 22px rgba(0,0,0,0.1);
+    background-color: $place-background;
+    border-radius: 5px;
+}
+
+.place-title {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 0.2px;
+    padding: 0px 1px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.temp-container {
+    display: flex;
+    flex-direction: column;
+    .max-temp, .min-temp {
+        font-size: 12px;
+    }
 }
