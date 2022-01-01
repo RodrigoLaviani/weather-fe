@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../assets/stylesheets/selector/selector.scss';
+import Place from './Place.js';
 
 const SelectorContainer = () => {
-
-    const style = {
-        border: "2px solid red"
-      };
-
     return (
-        <div className="selector-container" style={style}>
-
+        <div className="selector-container">
+            <Place></Place>
+            <Place></Place>
+            <Place></Place>
+            <Place></Place>
+            <Place></Place>
         </div>
     )
 }
