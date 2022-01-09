@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 
@@ -21,6 +21,27 @@ module.exports = (argv) => (merge(common(argv), {
         }],
         include: path.resolve(__dirname, './src/**/*.js'),
         exclude: /node_modules/
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+              loader: 'css-loader',
+              options: {
+                  sourceMap: true,
+              },
+          },
+          {
+              loader: 'sass-loader',
+              options: {
+                  sourceMap: true,
+              },
+          },
+        ],
       }
     ]
   }
